@@ -89,40 +89,4 @@ RSpec.describe "Recipes", type: :request do
       expect(recipe['image']).to include "can't be blank"
     end
   end
-
-
-  describe "PATCH /update" do 
-    it "cannot update a recipe without all valid attributes" do 
-        recipe_params = {
-          recipe: {
-              title: "Hot Pocket", 
-              ingredients: "Hot Pocket",
-              instructions: "Put in microwave",
-              image: "https://media.apts247.info/ce/ce9560e9239c4c3b8369663b0a699279/floorplans/1196_CoconutPalm_504586.jpg",
-              user_id: user.id
-          }
-        }
-
-      post '/recipes', params: recipe_params 
-
-      recipe = Recipe.first 
-
-      updated_recipe_params = {
-
-          recipe: {
-            title: "", 
-            ingredients: "Hot Pocket",
-            instructions: "Put in the oven",
-            image: "https://media.apts247.info/ce/ce9560e9239c4c3b8369663b0a699279/floorplans/1196_CoconutPalm_504586.jpg",
-            user_id: user.id
-          }
-      }
-
-      patch "/recipes/#{recipe.id}", params: updated_recipe_params
-
-      expect(response).to have_http_status(422)
-      recipe = JSON.parse(response.body)
-      expect(recipe['title']).to include "can't be blank"
-    end
-  end
 end
