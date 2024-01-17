@@ -1,24 +1,38 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Name of Application:** Laugh Host:3001
 
-Things you may want to cover:
+**Ruby version:** 3.2.0
 
-* Ruby version
+**System dependencies**
+* 		PostgreSQL
+* 		Spec
+* 		Devise
 
-* System dependencies
+**Configuration**
+<br> In config/initializers/cors.rb:
+*       Comment out line 3
+*       Uncomment line 4
 
-* Configuration
+**Database creation**
+<br> In terminal:
+*       rails db:create
+*       rails db:migrate
 
-* Database creation
+**Database initialization**
+<br>In terminal:
+*       rails db:seed
 
-* Database initialization
+**Running the BackEnd**
+<br>In terminal:
+* 		Clone this project’s repo locally
+* 		cd into the project directory
+* 		rails db:create
+* 		rails db:migrate
+* 		rails db:seed
+* 		bundle
+* 		rails s
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**How to run the test suite**
+<br> In terminal:
+* 		RSpec spec-filename
