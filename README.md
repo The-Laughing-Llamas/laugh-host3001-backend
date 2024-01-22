@@ -2,9 +2,9 @@
 
 **Name of Application:** Laugh Host:3001
 
-**Overview:** Laugh Host 3001 is a fun and lighthearted application where the user can store and delete their best, silliest, and most revolting recipes to their account. This application was created as a capstone project for the LEARN Academy web development bootcamp. The goal was to upload an app to Render with CRUD functionality, user authentication with Devise, and 60% test coverage.
+**Overview:** Laugh Host 3001 is a fun and lighthearted application where the user can store their silliest and most revolting recipes, receive Chuck Norris jokes, and use a Pig Latin translator. This application was created as a capstone project for the LEARN Academy web development bootcamp. The goal was to upload an app to Render with CRUD functionality, user authentication with Devise, and 60% test coverage.
 
-**Features:** The user can create an account, login, and logout. The user can also create, update, store, and delete recipes.
+**Features:** The user can create an account, login, and logout. The user can create, update, store, and delete recipes. The user can also access a Chuck Norris joke generator and Pig Latin translator.
 
 **Contributors**
 <br>In addition to coding and styling, each member that worked on this project had an additional role to fill.
